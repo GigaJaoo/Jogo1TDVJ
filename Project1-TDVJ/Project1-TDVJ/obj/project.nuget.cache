@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GRi49pVSVFlH0m890SXbGTo1shrtA2ova52DzZV11osTetPLN0PVeeo3O9cNJ2f4zETVIUn1UVn08XmToU5Xog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jotam\\Jogo1TDVJ\\Project1-TDVJ\\Project1-TDVJ\\Project1-TDVJ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jotam\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\jotam\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}

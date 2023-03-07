@@ -1,0 +1,7 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character4.png","C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/bin/DesktopGL/Character4.xnb","TextureProcessor","Texture2DContent",1668,8817,0,3848242
+"C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Crate_Red.png","C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/bin/DesktopGL/Crate_Red.xnb","TextureProcessor","Texture2DContent",1059,16469,0,0083965
+"C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/EndPoint_Red.png","C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/bin/DesktopGL/EndPoint_Red.xnb","TextureProcessor","Texture2DContent",566,4181,0,0081595
+"C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/File.spritefont","C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/bin/DesktopGL/File.xnb","FontDescriptionProcessor","SpriteFontContent",2065,21535,0,4035024
+"C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/GroundGravel_Sand.png","C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/bin/DesktopGL/GroundGravel_Sand.xnb","TextureProcessor","Texture2DContent",576,16469,0,0112785
+"C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/WallRound_Black.png","C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/bin/DesktopGL/WallRound_Black.xnb","TextureProcessor","Texture2DContent",1541,16469,0,0126489
