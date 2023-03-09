@@ -107,9 +107,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jotam\\Jogo1TDVJ\\Project1-TDVJ\\Project1-TDVJ\\Project1-TDVJ.csproj",
-      "projectName": "Project1-TDVJ",
-      "projectPath": "C:\\Users\\jotam\\Jogo1TDVJ\\Project1-TDVJ\\Project1-TDVJ\\Project1-TDVJ.csproj",
+      "projectUniqueName": "C:\\Users\\jotam\\Jogo1TDVJ\\Project1-TDVJ\\Project1-TDVJ\\Project1TDVJ.csproj",
+      "projectName": "Project1TDVJ",
+      "projectPath": "C:\\Users\\jotam\\Jogo1TDVJ\\Project1-TDVJ\\Project1-TDVJ\\Project1TDVJ.csproj",
       "packagesPath": "C:\\Users\\jotam\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jotam\\Jogo1TDVJ\\Project1-TDVJ\\Project1-TDVJ\\obj\\",
       "projectStyle": "PackageReference",

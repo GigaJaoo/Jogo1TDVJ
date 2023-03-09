@@ -2,8 +2,9 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.IO;
+using System.Numerics;
 
-namespace Project1_TDVJ
+namespace Project1TDVJ
 {
     public class Game1 : Game
     {
@@ -15,6 +16,7 @@ namespace Project1_TDVJ
         private char[,] level;
         private Texture2D player, dot, box, wall;
         int tileSize = 64;
+        private Player sokoban;
 
         public Game1()
         {
@@ -29,6 +31,9 @@ namespace Project1_TDVJ
 
             base.Initialize();
             LoadLevel("level1.txt"); //Carrega o ficheiro "level1.txt"
+            _graphics.PreferredBackBufferHeight = tileSize * level.GetLength(1); //definição da altura
+            _graphics.PreferredBackBufferWidth = tileSize * level.GetLength(0); //definição da largura
+            _graphics.ApplyChanges(); //aplica a atualização da janela
         }
 
         protected override void LoadContent()
@@ -55,18 +60,20 @@ namespace Project1_TDVJ
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Turquoise);
 
             // TODO: Add your drawing code here
 
             _spriteBatch.Begin();
-            _spriteBatch.DrawString(font, "Ola amigos", new Vector2(0, 0), Color.Black);
 
             Rectangle position = new Rectangle(0, 0, tileSize, tileSize);
             for (int x = 0; x < level.GetLength(0); x++) //pega a primeira dimensão
             {
                 for (int y = 0; y < level.GetLength(1); y++) //pega a segunda dimensão
                 {
+                    position.X = x * tileSize;
+                    position.Y = y * tileSize;
+
                     switch (level[x, y])
                     {
                         case 'Y':
@@ -85,6 +92,11 @@ namespace Project1_TDVJ
                 }
             }
 
+            position.X = sokoban.Position.X * tileSize; //posição do Player
+            position.Y = sokoban.Position.Y * tileSize; //posição do Player
+            _spriteBatch.Draw(player, position, Color.White); //desenha o Player
+
+
             _spriteBatch.End();
 
             base.Draw(gameTime);
@@ -97,11 +109,19 @@ namespace Project1_TDVJ
             nrColunas = linhas[0].Length;
             level = new char[nrColunas, nrLinhas];
 
-            for(int x = 0; x < nrColunas; x++)
+            for (int x = 0; x < nrColunas; x++)
             {
-                for(int y = 0; y < nrLinhas; y++)
+                for (int y = 0; y < nrLinhas; y++)
                 {
-                    level[x, y] = linhas[y][x];
+                    if (linhas[y][x] == 'Y')
+                    {
+                        sokoban = new Player(x, y);
+                        level[x, y] = ' '; // put a blank instead of the sokoban 'Y'
+                    }
+                    else
+                    {
+                        level[x, y] = linhas[y][x];
+                    }
                 }
             }
         }
