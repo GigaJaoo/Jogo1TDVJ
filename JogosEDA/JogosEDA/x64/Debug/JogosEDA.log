@@ -1,0 +1,5 @@
+﻿  Funcoes.c
+C:\Users\jotam\Jogo1TDVJ\JogosEDA\JogosEDA\Funcoes.c(28,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+  Main.c
+  Generating Code...
+  JogosEDA.vcxproj -> C:\Users\jotam\Jogo1TDVJ\JogosEDA\x64\Debug\JogosEDA.exe
