@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
@@ -35,10 +36,26 @@ namespace Project1TDVJ
             if (keysReleased)
             {
                 keysReleased = false;
-                if ((kState.IsKeyDown(Keys.A)) || (kState.IsKeyDown(Keys.Left))) position.X--;
-                else if ((kState.IsKeyDown(Keys.W)) || (kState.IsKeyDown(Keys.Up))) position.Y--;
-                else if ((kState.IsKeyDown(Keys.S)) || (kState.IsKeyDown(Keys.Down))) position.Y++;
-                else if ((kState.IsKeyDown(Keys.D)) || (kState.IsKeyDown(Keys.Right))) position.X++;
+                if ((kState.IsKeyDown(Keys.A)) || (kState.IsKeyDown(Keys.Left)))
+                {
+                    position.X--;
+                    game.direction = Direction.Left;
+                }
+                else if ((kState.IsKeyDown(Keys.W)) || (kState.IsKeyDown(Keys.Up)))
+                {
+                    position.Y--;
+                    game.direction = Direction.Up;
+                }
+                else if ((kState.IsKeyDown(Keys.S)) || (kState.IsKeyDown(Keys.Down)))
+                {
+                    position.Y++;
+                    game.direction = Direction.Down;
+                }
+                else if ((kState.IsKeyDown(Keys.D)) || (kState.IsKeyDown(Keys.Right)))
+                {
+                    position.X++;
+                    game.direction = Direction.Right;
+                }
                 else keysReleased = true;
             }
             else

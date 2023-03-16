@@ -4,7 +4,17 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/../../../Sokoban Resources/PNG/Character4.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character1.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character10.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character2.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character3.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character4.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character5.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character6.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character7.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character8.png</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Character9.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Crate_Red.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/EndPoint_Red.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/File.spritefont</File>
@@ -12,6 +22,16 @@
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/WallRound_Black.png</File>
   </SourceFiles>
   <DestFiles>
+    <File>Character4.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

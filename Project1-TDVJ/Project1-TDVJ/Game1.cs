@@ -4,9 +4,14 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
+using static Project1TDVJ.Player;
 
 namespace Project1TDVJ
 {
+    public enum Direction
+    {
+        Up, Down, Left, Right // 0, 1, 2, 3
+    }
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
@@ -15,13 +20,16 @@ namespace Project1TDVJ
         private int nrLinhas = 0;
         private int nrColunas = 0;
         //private char[,] level;
-        private Texture2D player, dot, box, wall;
+        
         private Player sokoban;
+        private Texture2D dot, box, wall; //Load images Texture
+        private Texture2D[] player;
 
         int tileSize = 64;
 
         public List<Point> boxes;
         public char[,] level;
+        public Direction direction = Direction.Down;
 
         public Game1()
         {
@@ -45,10 +53,16 @@ namespace Project1TDVJ
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("File");
-            player = Content.Load<Texture2D>("Character4");
+            
             dot = Content.Load<Texture2D>("EndPoint_Red");
             box = Content.Load<Texture2D>("Crate_Red");
             wall = Content.Load<Texture2D>("WallRound_Black");
+
+            player = new Texture2D[4];
+            player[(int)Direction.Down] = Content.Load<Texture2D>("Character4");
+            player[(int)Direction.Up] = Content.Load<Texture2D>("Character7");
+            player[(int)Direction.Left] = Content.Load<Texture2D>("Character1");
+            player[(int)Direction.Right] = Content.Load<Texture2D>("Character2");
 
             // TODO: use this.Content to load your game content here
         }
@@ -59,7 +73,8 @@ namespace Project1TDVJ
                 Exit();
 
             // TODO: Add your update logic here
-
+            if (Victory()) Exit(); // FIXME: Change current level
+            if (Keyboard.GetState().IsKeyDown(Keys.R)) Initialize();
             sokoban.Update(gameTime);
 
             base.Update(gameTime);
@@ -101,7 +116,7 @@ namespace Project1TDVJ
 
             position.X = sokoban.Position.X * tileSize; //posição do Player
             position.Y = sokoban.Position.Y * tileSize; //posição do Player
-            _spriteBatch.Draw(player, position, Color.White); //desenha o Player
+            _spriteBatch.Draw(player[(int)direction], position, Color.White); //desenha o Player
 
             foreach (Point b in boxes)
             {
@@ -159,6 +174,15 @@ namespace Project1TDVJ
             if (HasBox(x, y)) return false; // verifica se é uma caixa
             return true;
             /* The same as: return level[x,y] != 'X' && !HasBox(x,y); */
+        }
+
+        public bool Victory()
+        {
+            foreach (Point b in boxes) // pecorrer a lista das caixas
+            {
+                if (level[b.X, b.Y] != '.') return false; // verifica se há caixas sem pontos
+            }
+            return true;
         }
     }
 }
