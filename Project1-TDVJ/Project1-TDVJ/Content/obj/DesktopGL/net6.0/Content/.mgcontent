@@ -18,11 +18,13 @@
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/Crate_Red.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/EndPoint_Red.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/File.spritefont</File>
+    <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/FileFont2.spritefont</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/GroundGravel_Sand.png</File>
     <File>C:/Users/jotam/Jogo1TDVJ/Project1-TDVJ/Project1-TDVJ/Content/WallRound_Black.png</File>
   </SourceFiles>
   <DestFiles>
     <File>Character4.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

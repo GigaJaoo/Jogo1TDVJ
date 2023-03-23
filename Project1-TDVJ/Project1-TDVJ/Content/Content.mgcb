@@ -176,6 +176,13 @@
 /processorParam:TextureFormat=Compressed
 /build:File.spritefont
 
+#begin FileFont2.spritefont
+/importer:FontDescriptionImporter
+/processor:LocalizedFontProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:FileFont2.spritefont
+
 #begin GroundGravel_Sand.png
 /importer:TextureImporter
 /processor:TextureProcessor
