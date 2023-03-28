@@ -49,5 +49,6 @@ C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\Ch
 C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\Character7.png
 C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\Character8.png
 C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\Character9.png
-C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\level2.txt
 C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\FileFont2.xnb
+C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\level3.txt
+C:\Users\jotam\Jogo1TDVJ\Project1-TDVJ\Project1-TDVJ\bin\Debug\net6.0\Content\level2.txt
